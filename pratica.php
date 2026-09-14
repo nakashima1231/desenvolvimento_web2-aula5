@@ -1,7 +1,12 @@
 <?php
-if (file_exists('diario.md')) {
-    $diario = fopen('diario.md', 'r');
-    echo nl2br(fread($diario, filesize('diario.md')));
+if (isset($_POST['texto'])) {
+    $texto = $_POST['texto'];
+
+    $diario = fopen('diario.md', 'a');
+    fwrite($diario, $texto . "\n\n");
     fclose($diario);
+
+    echo "Salvo com sucesso!<br><br>";
+    echo "<a href='visualizar.php'>Ver entradas</a> | <a href='index.html'>Voltar</a>";
 }
 ?>
