@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Escrever no Diário</title>
 </head>
 <body>
 
-    <form action="pratica.php">
-        <label for="">Digita algo</label>
-        <input type="text" name="texto">
+    <form action="pratica.php" method="POST">
+        <label for="texto">Digite algo:</label><br>
+        <textarea id="texto" name="texto" rows="5" cols="40" required></textarea><br><br>
 
-        <button></button>
+        <button type="submit">Salvar no Diário</button>
     </form>
-    
+
+    <br>
+    <a href="visualizar.php">Ver diário</a>
+
 </body>
 </html>
