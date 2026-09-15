@@ -2,5 +2,5 @@
 
     $caminho = 'diario.md';
 
-    fclose($caminho);
+    readfile($caminho);
 ?>
