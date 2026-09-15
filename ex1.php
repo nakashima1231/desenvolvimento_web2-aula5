@@ -7,6 +7,6 @@ if (isset($_POST['texto'])) {
     fclose($diario);
 
     echo "Salvo com sucesso!<br><br>";
-    echo "<a href='visualizar.php'>Ver entradas</a> | <a href='index.html'>Voltar</a>";
+    echo "<a href='ex1b.php'>Ver entradas</a> | <a href='ex1.html'>Voltar</a>";
 }
 ?>
